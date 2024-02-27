@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Streaming Schedule - [Your Gaming Account Name]</title>
+    <title>About Me - [Your Gaming Account Name]</title>
     <style>
         /* Global Styles */
         body {
@@ -70,9 +70,27 @@
         /* Section Styles */
         section {
             margin-bottom: 40px;
-            padding: 40px;
+            padding: 20px;
             background-color: #fff;
             border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .about-me-intro {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .about-me-picture {
+            flex: 1;
+            text-align: center;
+        }
+
+        .about-me-picture img {
+            max-width: 100%;
+            border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
@@ -108,23 +126,27 @@
 <body>
 
     <header>
-        <h1>Streaming Schedule - [Your Gaming Account Name]</h1>
+        <h1>About Me - [Your Gaming Account Name]</h1>
     </header>
 
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="./aboutme.html">About Me</a></li>
             <li><a href="highlights.html">Gameplay Highlights</a></li>
             <li><a href="community.html">Community Engagement</a></li>
+            <li><a href="schedule.html">Streaming Schedule</a></li>
         </ul>
     </nav>
 
     <div class="container">
         <section>
-            <h2>Upcoming Streams</h2>
-            <!-- Add your streaming schedule here -->
-            <p>Stay tuned for exciting live streams of your favorite games!</p>
+            <div class="about-me-intro">
+                <h2>About Me</h2>
+                <p>Introduce yourself here! Tell your audience about your gaming journey, favorite games, achievements, and anything else you'd like to share.</p>
+            </div>
+            <div class="about-me-picture">
+                <img src="https://via.placeholder.com/400" alt="Profile Picture">
+            </div>
         </section>
     </div>
 

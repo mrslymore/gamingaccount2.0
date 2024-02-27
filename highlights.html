@@ -13,12 +13,15 @@
             background-color: #f8f8f8;
             color: #333;
             line-height: 1.6;
+            position: relative; /* Ensure relative positioning for footer */
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            padding-bottom: 60px; /* Add padding for footer height */
+            box-sizing: border-box; /* Include padding in container width */
         }
 
         /* Header Styles */
@@ -70,10 +73,26 @@
         /* Section Styles */
         section {
             margin-bottom: 40px;
-            padding: 40px;
+            padding: 20px;
             background-color: #fff;
             border-radius: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; /* Ensure even distribution of videos */
+        }
+
+        .video-wrapper {
+            flex: 1 0 32%; /* Adjust width to fit three videos per row for larger screens */
+            margin-bottom: 20px; /* Add margin between videos */
+            box-sizing: border-box; /* Include padding in video width */
+        }
+
+        .video-wrapper video {
+            width: 92.5%;
+            border-radius: 15px; /* Adjust border radius */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
         }
 
         h2 {
@@ -81,10 +100,8 @@
             font-size: 2.5rem;
             margin-top: 0;
             margin-bottom: 20px;
-        }
-
-        p {
-            color: #555;
+            text-align: center;
+            width: 100%;
         }
 
         /* Footer Styles */
@@ -95,6 +112,9 @@
             padding: 20px;
             border-radius: 20px 20px 0 0;
             box-shadow: 0 -8px 16px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            bottom: 0;
+            width: 100%;
         }
 
         footer p {
@@ -111,6 +131,7 @@
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
             <li><a href="community.html">Community Engagement</a></li>
             <li><a href="schedule.html">Streaming Schedule</a></li>
         </ul>
@@ -118,9 +139,80 @@
 
     <div class="container">
         <section>
-            <h2>Best Moments</h2>
-            <!-- Add your gameplay highlight videos or images here -->
-            <p>Showcasing the most epic moments from your gaming adventures!</p>
+            <h2>Gameplay Highlights</h2>
+            <div class="video-wrapper">
+                <video controls>
+                    <source src="video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <!-- Add more video wrappers for a total of 12 videos -->
+            <div class="video-wrapper">
+                <video controls>
+                    <source src="video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-wrapper">
+                <video controls>
+                    <source src="video3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-wrapper">
+                <video controls>
+                    <source src="video4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-wrapper">
+                <video controls>
+                    <source src="video5.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-wrapper">
+                <video controls>
+                    <source src="video6.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-wrapper">
+                <video controls>
+                    <source src="video7.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-wrapper">
+                <video controls>
+                    <source src="video8.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-wrapper">
+                <video controls>
+                    <source src="video9.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-wrapper">
+                <video controls>
+                    <source src="video10.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-wrapper">
+                <video controls>
+                    <source src="video11.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-wrapper">
+                <video controls>
+                    <source src="video12.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </section>
     </div>
 
